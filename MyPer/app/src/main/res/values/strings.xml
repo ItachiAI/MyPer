@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyPer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Yanis CHIKIROU</string>
+    <string name="nav_header_subtitle">Date de naissance : 24/01/1990</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Paramètres</string>
+
+    <string name="menu_home"><font fgcolor='#173659'>Accueil</font></string>
+    <string name="menu_points"><font fgcolor='#173659'>Mes points</font></string>
+    <string name="menu_gallery"><font fgcolor='#173659'>FAQs</font></string>
+    <string name="menu_stage"><font fgcolor='#173659'>Trouver session de stage</font></string>
+    <string name="menu_contact_pref"><font fgcolor='#173659'>Contacter ma préfécture</font></string>
+    <string name="menu_slideshow"><font fgcolor='#173659'>Notifications</font></string>
+
+
+    <string name="home_second">Home Second</string>
+</resources>
