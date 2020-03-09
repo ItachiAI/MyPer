@@ -23,7 +23,7 @@ public class PointsFragment extends Fragment {
         pointsViewModel =
                 ViewModelProviders.of(this).get(PointsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_points, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
+        final TextView textView = root.findViewById(R.id.textView6);
         pointsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

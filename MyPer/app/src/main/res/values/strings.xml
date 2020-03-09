@@ -16,4 +16,13 @@
 
 
     <string name="home_second">Home Second</string>
+    <string name="ameli_icon">Ameli</string>
+    <string name="connexion">Connexion</string>
+    <string name="solde_de_vos_points">Solde de vos points</string>
+    <string name="bonjour">Bonjour</string>
+    <string name="date_de_naissance">Date de naissance :</string>
+    <string name="votre_dossier_de_permis_est_d_t_cet_instant">Votre dossier de permis est dôté, à cet instant :</string>
+    <string name="avertissements_importants">AVERTISSEMENTS IMPORTANTS :</string>
+    <string name="_12">12</string>
+    <string name="points">points</string>
 </resources>

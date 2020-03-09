@@ -6,23 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteY="8dp" />
-
     <ImageView
         android:id="@+id/fr_band"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="TODO"
         android:src="@drawable/fr_band"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/ants_logo"
@@ -33,7 +26,8 @@
         android:layout_marginTop="7dp"
         android:src="@drawable/ants_logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fr_band" />
+        app:layout_constraintTop_toBottomOf="@+id/fr_band"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -44,7 +38,8 @@
         android:layout_marginRight="35dp"
         android:src="@drawable/fc_avatar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fr_band" />
+        app:layout_constraintTop_toBottomOf="@+id/fr_band"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/solde_pts_txt"
@@ -54,7 +49,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="11dp"
-        android:text="Solde de vos points"
+        android:text="@string/solde_de_vos_points"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bonjour"
@@ -62,13 +57,26 @@
         app:layout_constraintTop_toBottomOf="@+id/ants_logo" />
 
     <TextView
+        android:id="@+id/text_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
         android:id="@+id/bonjour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
         android:layout_marginTop="6dp"
-        android:text="Bonjour"
+        android:text="@string/bonjour"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/solde_pts_txt" />
 
@@ -78,8 +86,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
-        android:layout_marginTop="5dp"
-        android:text="Date de naissance :"
+        android:layout_marginTop="2dp"
+        android:text="@string/date_de_naissance"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bonjour" />
 
@@ -89,14 +97,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
-        android:text="Votre dossier de permis est dôté, à cet instant :"
+        android:text="@string/votre_dossier_de_permis_est_d_t_cet_instant"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/part3" />
 
     <TextView
         android:id="@+id/textView6"
@@ -104,8 +110,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
-        android:layout_marginTop="10dp"
-        android:text="AVERTISSEMENTS IMPORTANTS :"
+        android:layout_marginTop="8dp"
+        android:text="@string/avertissements_importants"
         android:textColor="#D56060"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,10 +123,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="184dp"
         android:layout_marginLeft="184dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="204dp"
         android:layout_marginRight="204dp"
-        android:text="12"
+        android:text="@string/_12"
         android:textColor="#4CAF50"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -134,25 +140,53 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="9dp"
-        android:text="points"
+        android:layout_marginTop="8dp"
+        android:text="@string/points"
         android:textColor="#4CAF50"
         app:layout_constraintStart_toEndOf="@+id/solde_pts"
         app:layout_constraintTop_toBottomOf="@+id/folder_status" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="352dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:id="@+id/part1"
+        android:layout_width="324dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:text="1. Il s'agit du solde de points affectés à votre dossier de permis de conduire au moment de la visualisation , sous réserve d'éventuelles autres infractions commises et non encore enregistrées dans le système national des permis de conduire;  2. Le solde de points qui apparaît ne préjuge pas des éventuelles mesures de restriction du droit de conduire (suspension administrative ou judiciaire du permis de conduire) dont vous pouvez faire l'objet ;  3. Le solde de points affiché ci-dessous est exclusivement destiné au titulaire du permis de conduire correspondant. Le fait, pour un tiers non autorisé par la loi, notamment un employeur ou un assureur, d'obtenir soit directement, soit indirectement communication de cette information est un délit prévu par l'article    L.225-8 du code de la route (7 500 euros d'amende)."
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/text_home"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="1. Il s'agit du solde de points affectés à votre dossier de permis de conduire au moment de la visualisation , sous réserve d'éventuelles autres infractions commises et non encore enregistrées dans le système national des permis de conduire;"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/part2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/part2"
+        android:layout_width="324dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="2. Le solde de points qui apparaît ne préjuge pas des éventuelles mesures de restriction du droit de conduire (suspension administrative ou judiciaire du permis de conduire) dont vous pouvez faire l'objet ;"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/part1" />
+
+    <TextView
+        android:id="@+id/part3"
+        android:layout_width="324dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="3. Le solde de points affiché ci-dessous est exclusivement destiné au titulaire du permis de conduire correspondant. Le fait, pour un tiers non autorisé par la loi, notamment un employeur ou un assureur, d'obtenir soit directement, soit indirectement communication de cette information est un délit prévu par l'article    L.225-8 du code de la route (7 500 euros d'amende)."
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/part2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
